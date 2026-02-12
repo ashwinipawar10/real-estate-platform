@@ -1,0 +1,78 @@
+.property-list-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.property-list-content {
+  margin-top: 30px;
+}
+
+.property-list-header {
+  margin-bottom: 30px;
+}
+
+.property-list-header h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: var(--dark-color);
+}
+
+.property-list-header p {
+  color: var(--secondary-color);
+  font-size: 16px;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.no-properties {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.no-properties p {
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.page-info {
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+@media (max-width: 1024px) {
+  .property-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .property-list-container {
+    padding: 20px 15px;
+  }
+
+  .property-list-header h2 {
+    font-size: 24px;
+  }
+
+  .property-grid {
+    grid-template-columns: 1fr;
+  }
+}

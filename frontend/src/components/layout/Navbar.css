@@ -1,0 +1,125 @@
+.navbar {
+  background-color: white;
+  box-shadow: var(--shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar-menu a {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: var(--primary-color);
+}
+
+.navbar-add-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--success-color);
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.navbar-add-btn:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.navbar-logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--danger-color);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-logout-btn:hover {
+  color: #dc2626;
+}
+
+.navbar-auth-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: var(--light-color);
+  transition: all 0.3s ease;
+}
+
+.navbar-auth-btn.primary {
+  background-color: var(--primary-color);
+  color: white !important;
+}
+
+.navbar-auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    height: 60px;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .navbar-menu {
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .navbar-add-btn,
+  .navbar-auth-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
